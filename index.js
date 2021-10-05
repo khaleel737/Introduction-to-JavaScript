@@ -162,15 +162,82 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+// function game(user, computer){
+//   /*add your code here*/
+
+// let userChoice = Math.random();
+// let computerChoice = Math.random();
+
+// //   if (userChoice < computerChoice)
+
+// if (computerChoice <= 0.33) {
+//  computerChoice === 'Rock';
+// } else if (computerChoice > 0.33 && computerChoice <= 0.66){
+//   computerChoice === 'Paper';
+// } else if (computerChoice > 0.66 && computerChoice <= 1) {
+//   computerChoice === 'Scissors'
+// } else if (user <= 0.33) {
+//   computerChoice === 'Rock';
+//  } else if (userChoice > 0.33 && userChoice <= 0.66){
+//   userChoice === 'Paper';
+// } else  if (userChoice > 0.66 && userChoice <= 1) {
+//   computer === 'Scissors'
+// } else {
+
+// }
+ 
+//   if (userChoice === 'Scissors' && computerChoice === 'Paper') {
+//  return 'you win!';
+//   } else if (computerChoice === 'Scissors' && userChoice === 'Paper'){
+//     return 'you lose!';
+// } else if (userChoice === 'Paper' && computerChoice === 'Rock') {
+//   return 'you win!';
+// } else if (computerChoice === 'Paper' && userChoice === 'Rock') {
+//   return 'you lose!'; 
+// } else if (userChoice === 'Rock' && computerChoice === 'Scissors') {
+//   return 'you win!';
+// } else if (computerChoice === 'Rock' && userChoice === 'Scissors') {
+//   return 'you lose!';
+// } else if (computerChoice === userChoice) {
+//   return "it's a tie!";
+// }
 function game(user, computer){
   /*add your code here*/
 
-// let userChoice = user;
-// let computerChoice = computer;
+let userChoice = Math.random();
+let computerChoice = Math.random();
 
 //   if (userChoice < computerChoice)
 
-} 
+if (computerChoice <= 0.33) {
+ computerChoice === 'Rock';
+} else if (computerChoice > 0.33 && computerChoice <= 0.66){
+  computerChoice === 'Paper';
+} else if (computerChoice > 0.66 && computerChoice <= 1) {
+  computerChoice === 'Scissors'
+} else if (user <= 0.33) {
+  computerChoice === 'Rock';
+ } else if (userChoice > 0.33 && userChoice <= 0.66){
+  userChoice === 'Paper';
+} else  if (userChoice > 0.66 && userChoice <= 1) {
+  computer === 'Scissors'
+} else {
+
+}
+ 
+  if (userChoice > computerChoice) {
+ return 'you win!';
+} else if (userChoice < computerChoice) {
+    return 'you lose!';
+} else if (userChoice === computerChoice) {
+    return "it's a tie"
+  }
+
+  // return userChoice + computerChoice;
+}
+
+console.log(game());
+
 
 
 
@@ -273,7 +340,7 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(counter) {
+function vowelCounter() {
 const vowels = ['a', 'B', 'c', 'd', 'e', 'f', 'G'];
 
 return vowels.includes();
