@@ -162,32 +162,83 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-let computer = Math.floor(Math.random() * 3);
-let user = Math.floor(Math.random() * 3);
+let computer = Math.random();
+// // let user = Math.floor(Math.random() * 3);
+// if (computer <= 0.333) {
+//   computer ='rock';
+//  } else if (computer <= 0.66){
+//    computer = 'Paper';
+//  } else {
+//     computer = 'scissors';
+//  }
 
 function game(user, computer){
         
-   let Scissors = 0;
-   let Rock = 1;
-   let Paper = 2;
+   let scissors = 0;
+   let rock = 1;
+   let paper = 2;
 
-        if (user === 0 && computer === 2) {
-        return 'you win!';
-         } else if (computer === 0 && user === 2){
-           return 'you lose!';
-       } else if (user === 2 && computer === 1) {
-         return 'you win!';
-       } else if (computer === 2 && user === 1) {
-         return 'you lose!'; 
-       } else if (user === 1 && computer === 0) {
-         return 'you win';
-       } else if (computer === 1 && user === 0) {
-         return 'you lose!';
-       } else if (computer === user) {
-         return "it's a tie";
-       }
-}
-console.log(game(user, computer));
+   if (user === 'scissors' && computer === 'paper') {
+     return 'you win!';
+      } else if (user === 'rock' && computer === 'paper'){
+        return 'you lose!';
+    } else if (user === 'paper' && computer === 'rock') {
+      return 'you win!';
+    } else if (user === 'scissors' && computer === 'rock') {
+      return 'you lose!'; 
+    } else if (user === 'rock' && computer === 'scissors') {
+      return 'you win!';
+    } else if (user === 'paper' && computer === 'scissors') {
+      return 'you lose!';
+    } else if (user === computer) {
+      return "it's a tie";
+    }
+  }
+  // console.log(game(2, 1));
+  // console.log(game(1, computer));
+
+// let computer = Math.random();
+
+//   if(computer <= .333)
+//   computer = "scissors"
+//   else if(computer <=.66)
+//   computer = "rock"
+//   else computer = "Paper"
+
+
+// function game(user, computer){
+//   if(user === "rock" && computer === "paper"){
+//     return "you lose!"
+//   } else if(user === "paper" && computer === "scissors"){
+//     return "you lose!"
+//   } else if(user === "scissors" && computer === "rock"){
+//     return "you lose!"
+//   } else if(user === "rock" && computer === "scissors"){
+//     return "you win!"
+//   } else if(user === "paper" && computer === "rock"){
+//     return "you win!"
+//   } else if(user === "scissors" && computer === "paper"){
+//     return "you win!"
+//   } else if(user === computer){
+//     return "it's a tie"
+//   }
+// }
+
+      //   if (user === 0 && computer === 2) {
+      //   return "you win!";
+      //    } else if (computer === 0 && user === 2){
+      //      return "you lose!";
+      //  } else if (user === 2 && computer === 1) {
+      //    return 'you win!';
+      //  } else if (computer === 2 && user === 1) {
+      //    return 'you lose!'; 
+      //  } else if (user === 1 && computer === 0) {
+      //    return "you win!";
+      //  } else if (computer === 1 && user === 0) {
+      //    return "you lose!";
+      //  } else if (computer === user) {
+      //    return "it's a tie";
+      //  }
 
 // function game(user, computer){
 //   /*add your code here*/
@@ -197,20 +248,12 @@ console.log(game(user, computer));
 
 // //   if (userChoice < computerChoice)
 
-// if (computerChoice <= 0.33) {
-//  computerChoice === 'Rock';
-// } else if (computerChoice > 0.33 && computerChoice <= 0.66){
+// if (computer <= 0.33) {
+//  computer ='Rock';
+// } else if (computerChoice <= 0.66){
 //   computerChoice === 'Paper';
-// } else if (computerChoice > 0.66 && computerChoice <= 1) {
-//   computerChoice === 'Scissors'
-// } else if (user <= 0.33) {
-//   computerChoice === 'Rock';
-//  } else if (userChoice > 0.33 && userChoice <= 0.66){
-//   userChoice === 'Paper';
-// } else  if (userChoice > 0.66 && userChoice <= 1) {
-//   computer === 'Scissors'
 // } else {
-
+//   return computer === 'scissors';
 // }
  
 //   if (userChoice === 'Scissors' && computerChoice === 'Paper') {
