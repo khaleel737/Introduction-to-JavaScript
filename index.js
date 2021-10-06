@@ -162,6 +162,33 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let computer = Math.floor(Math.random() * 3);
+let user = Math.floor(Math.random() * 3);
+
+function game(user, computer){
+        
+   let Scissors = 0;
+   let Rock = 1;
+   let Paper = 2;
+
+        if (user === 0 && computer === 2) {
+        return 'you win!';
+         } else if (computer === 0 && user === 2){
+           return 'you lose!';
+       } else if (user === 2 && computer === 1) {
+         return 'you win!';
+       } else if (computer === 2 && user === 1) {
+         return 'you lose!'; 
+       } else if (user === 1 && computer === 0) {
+         return 'you win';
+       } else if (computer === 1 && user === 0) {
+         return 'you lose!';
+       } else if (computer === user) {
+         return "it's a tie";
+       }
+}
+console.log(game(user, computer));
+
 // function game(user, computer){
 //   /*add your code here*/
 
@@ -201,42 +228,81 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 // } else if (computerChoice === userChoice) {
 //   return "it's a tie!";
 // }
-function game(user, computer){
-  /*add your code here*/
 
-let userChoice = Math.random();
-let computerChoice = Math.random();
+
+// let user = Math.floor(Math.random() * 3);
+// let computer = Math.floor(Math.random() * 3);
+
+// function game(user, computer){
+//   /*add your code here*/
+//   if (computer <= 0.33) {
+//     computer = 'Rock';
+//    } else if (computer > 0.33 && computer <= 0.66){
+//      computer ='Paper';
+//    } else if (computer > 0.66 && computer <= 1) {
+//      computer ='Scissors'
+//    } else if (user <= 0.33) {
+//      user = 'Rock';
+//     } else if (user > 0.33 && user <= 0.66){
+//      user = 'Paper';
+//    } else  if (user > 0.66 && user <= 1) {
+//      user = 'Scissors'
+//    }
+   
+// if (user === 'Scissors' && computer === 'Paper') {
+//     return 'you win!';
+//      } else if (computer === 'Scissors' && user === 'Paper'){
+//        return 'you lose!';
+//    } else if (user === 'Paper' && computer === 'Rock') {
+//      return 'you win!';
+//    } else if (computer === 'Paper' && user === 'Rock') {
+//      return 'you lose!'; 
+//    } else if (user === 'Rock' && computer === 'Scissors') {
+//      return 'you win!';
+//    } else if (computer === 'Rock' && user === 'Scissors') {
+//      return 'you lose!';
+//    } else if (computer === 'Rock' && user === 'Rock') {
+//      return "it's a tie!";
+//    } else if (computer === 'Paper' && user === 'Paper') {
+//     return "it's a tie!";
+//   } else if (computer === 'Scissors' && user === 'Scissors') {
+//     return "it's a tie!";
+//   }
+// }
+//   console.log(game(0.3, 0.4));
+
+// let userChoice = Math.random();
+// let computerChoice = Math.random();
 
 //   if (userChoice < computerChoice)
 
-if (computerChoice <= 0.33) {
- computerChoice === 'Rock';
-} else if (computerChoice > 0.33 && computerChoice <= 0.66){
-  computerChoice === 'Paper';
-} else if (computerChoice > 0.66 && computerChoice <= 1) {
-  computerChoice === 'Scissors'
-} else if (user <= 0.33) {
-  computerChoice === 'Rock';
- } else if (userChoice > 0.33 && userChoice <= 0.66){
-  userChoice === 'Paper';
-} else  if (userChoice > 0.66 && userChoice <= 1) {
-  computer === 'Scissors'
-} else {
+// if (computerChoice <= 0.33) {
+//  computerChoice === 'Rock';
+// } else if (computerChoice > 0.33 && computerChoice <= 0.66){
+//   computerChoice === 'Paper';
+// } else if (computerChoice > 0.66 && computerChoice <= 1) {
+//   computerChoice === 'Scissors'
+// } else if (user <= 0.33) {
+//   computerChoice === 'Rock';
+//  } else if (userChoice > 0.33 && userChoice <= 0.66){
+//   userChoice === 'Paper';
+// } else  if (userChoice > 0.66 && userChoice <= 1) {
+//   computer === 'Scissors'
+// } else {
 
-}
+// }
  
-  if (userChoice > computerChoice) {
- return 'you win!';
-} else if (userChoice < computerChoice) {
-    return 'you lose!';
-} else if (userChoice === computerChoice) {
-    return "it's a tie"
-  }
+//   if (computerChoice > userChoice) {
+//  return 'you win!';
+// } else if (computerChoice <  userChoice) {
+//     return 'you lose!';
+// } else if (computerChoice === userChoice) {
+//     return "it's a tie"
+//   }
 
   // return userChoice + computerChoice;
-}
 
-console.log(game());
+// console.log(game());
 
 
 
@@ -367,3 +433,19 @@ module.exports = {
   annoyingSong,
   grade
 }
+
+
+  // if (computer <= 0.33) {
+  //   computer === 'Rock';
+  //  } else if (computer > 0.33 && computer <= 0.66){
+  //    computer === 'Paper';
+  //  } else if (computer > 0.66 && computer <= 1) {
+  //    computer === 'Scissors'
+  //  } else if (user <= 0.33) {
+  //    computer === 'Rock';
+  //   } else if (user > 0.33 && user <= 0.66){
+  //    user === 'Paper';
+  //  } else  if (user > 0.66 && user <= 1) {
+  //    user === 'Scissors'
+  //  } else {
+  //  }
